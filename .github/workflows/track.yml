@@ -1,0 +1,45 @@
+name: Track Trump PTRs
+
+# Pollt regelmäßig whitehouse.gov nach neuen Periodic Transaction Reports,
+# extrahiert die Transaktionen und committet state/dataset.json.
+# Der Webspace-Tracker liest diese Datei und sendet die Telegram-Pushes.
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'   # alle 6 Stunden (Minute 17, um Lastspitzen zu meiden)
+  workflow_dispatch: {}       # manueller Start per Knopf
+
+permissions:
+  contents: write             # damit der Job state/* committen darf
+
+concurrency:
+  group: track
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: OCR-/PDF-Werkzeuge installieren
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils tesseract-ocr
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Pipeline ausführen
+        run: node track.mjs
+
+      - name: Änderungen committen (nur falls vorhanden)
+        run: |
+          if [ -n "$(git status --porcelain state/)" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add state/
+            git commit -m "data: neue Trump-Transaktionen ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          else
+            echo "Keine Änderungen — nichts zu committen."
+          fi
