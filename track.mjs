@@ -83,13 +83,17 @@ const GEM_SCHEMA = { type:'OBJECT', properties:{ transactions:{ type:'ARRAY', it
   properties:{ company:{type:'STRING'}, ticker:{type:'STRING'}, type:{type:'STRING'}, date:{type:'STRING'}, amount:{type:'STRING'} },
   required:['company','type'] } } }, required:['transactions'] };
 
-async function geminiCallPdf(pdfPath) {
+async function geminiCallPdf(pdfPath, attempt = 0) {
   const b64 = readFileSync(pdfPath).toString('base64');
   const body = { contents:[{ parts:[ { inline_data:{ mime_type:'application/pdf', data:b64 } }, { text:GEM_PROMPT } ] }],
     generationConfig:{ responseMimeType:'application/json', responseSchema:GEM_SCHEMA } };
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${process.env.GEMINI_API_KEY}`;
   const r = await fetch(url, { method:'POST', headers:{ 'Content-Type':'application/json' }, body:JSON.stringify(body) });
-  if (r.status === 429) { await sleep(25000); return geminiCallPdf(pdfPath); } // Rate-Limit: kurz warten, 1 Retry
+  if (r.status === 429) { // Rate-Limit: gestaffelt warten, begrenzt oft
+    if (attempt >= 4) throw new Error('Gemini 429: Rate-Limit nach mehreren Versuchen');
+    await sleep(20000 * (attempt + 1));
+    return geminiCallPdf(pdfPath, attempt + 1);
+  }
   if (!r.ok) throw new Error(`Gemini HTTP ${r.status}: ${(await r.text()).slice(0, 200)}`);
   const j = await r.json();
   const txt = j.candidates?.[0]?.content?.parts?.[0]?.text;
@@ -119,7 +123,7 @@ async function geminiExtract(pdfPath) {
         rawDescription: (g.company || '').trim(),
       });
     }
-    if (ranges.length > 1 && i < ranges.length - 1) await sleep(4000); // Free-Tier-RPM schonen
+    if (ranges.length > 1 && i < ranges.length - 1) await sleep(7000); // Free-Tier-RPM schonen (unter dem Minutenlimit bleiben)
   }
   return out;
 }

@@ -29,10 +29,12 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Pipeline ausführen
+      - name: Pipeline ausführen (Trades + Posts)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node track.mjs
+        run: |
+          node track.mjs || echo "::warning::track.mjs Fehler"
+          node posts.mjs || echo "::warning::posts.mjs Fehler"
 
       - name: Änderungen committen (nur falls vorhanden)
         run: |
