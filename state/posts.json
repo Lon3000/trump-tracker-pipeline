@@ -11,7 +11,7 @@
     "sentiment": "negative"
    }
   ],
-  "relevant": true
+  "relevant": false
  },
  {
   "id": "38960",
@@ -25,7 +25,7 @@
     "sentiment": "negative"
    }
   ],
-  "relevant": true
+  "relevant": false
  },
  {
   "id": "38948",
@@ -37,18 +37,9 @@
     "ticker": "FOXA",
     "company": "Fox Corporation",
     "sentiment": "neutral"
-   }
-  ],
-  "relevant": false
- },
- {
-  "id": "38949",
-  "date": "Sat, 30 May 2026 23:56:20 +0000",
-  "url": "https://trumpstruth.org/statuses/38949",
-  "text": "Watch Mark Levin tonight at 8:00. A BIG SHOW!",
-  "tickers": [
+   },
    {
-    "ticker": "FOXA",
+    "ticker": "FOX",
     "company": "Fox Corporation",
     "sentiment": "neutral"
    }
@@ -63,11 +54,6 @@
   "tickers": [
    {
     "ticker": "FOXA",
-    "company": "Fox Corporation",
-    "sentiment": "neutral"
-   },
-   {
-    "ticker": "FOX",
     "company": "Fox Corporation",
     "sentiment": "neutral"
    }
@@ -86,6 +72,6 @@
     "sentiment": "negative"
    }
   ],
-  "relevant": true
+  "relevant": false
  }
 ]

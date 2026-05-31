@@ -43,13 +43,17 @@ function parseFeed(xml) {
 
 async function classify(posts) {
   const numbered = posts.map((p, i) => `[${i}] ${p.text.slice(0, 500)}`).join('\n\n');
-  const prompt = "Diese nummerierten Posts stammen von Donald Trump (Truth Social). "
-    + "Bestimme für JEDEN Post die erwähnten BÖRSENNOTIERTEN Unternehmen. "
-    + "tickers = Array von {ticker, company, sentiment: positive|negative|neutral}. "
-    + "relevant = true NUR, wenn der Post eine marktrelevante Aussage über ein konkretes gelistetes Unternehmen macht "
-    + "(Lob/Kritik an Geschäft, Produkten, Führung; Zölle/Politik/Regulierung, die es betrifft). "
-    + "relevant = false bei: allgemeiner Politik; bloßer Nennung von Medien (NYT, CNN, Fox) als Nachrichtenquelle oder TV-Auftritts-Hinweisen; keinem Unternehmen. "
-    + "Gib für Posts ohne Unternehmen ein leeres tickers-Array und relevant=false. Posts:\n\n" + numbered;
+  const prompt = "Diese nummerierten Posts stammen von Donald Trump (Truth Social). Erkenne erwähnte BÖRSENNOTIERTE Unternehmen.\n"
+    + "tickers = Array von {ticker, company, sentiment: positive|negative|neutral} (auch wenn nicht relevant — nur fürs Listing).\n"
+    + "relevant = true NUR wenn ALLE Punkte zutreffen:\n"
+    + "  1) Ein konkretes, eindeutig börsennotiertes Unternehmen ist das HAUPTTHEMA des Posts (nicht beiläufig erwähnt).\n"
+    + "  2) Der Post macht eine SUBSTANZIELLE, potenziell kursbewegende Aussage dazu: Lob/Kritik am Geschäft/Produkten/Management; angekündigte oder angedrohte Maßnahme (Zoll, Sanktion, Auftrag, Deal, Regulierung, Untersuchung, Subvention); konkrete Geschäfts-/Finanz-/Investitionsnachricht.\n"
+    + "relevant = false (AUCH wenn ein Ticker vorkommt) bei:\n"
+    + "  - Medienunternehmen (New York Times/NYT, CNN, Fox/FOXA, MSNBC, ABC, NBC, CBS, Washington Post, Politico, …), wenn sie nur als Nachrichtenquelle, Zitatgeber oder Ziel allgemeiner 'Fake News'-Kritik genannt werden;\n"
+    + "  - Hinweisen auf TV-/Interview-Auftritte ('watch tonight …');\n"
+    + "  - allgemeiner Politik, Wahlen, Migration, Personalien ohne konkrete Unternehmens-Aussage;\n"
+    + "  - bloßer/beiläufiger Erwähnung ohne kursrelevante Aussage.\n"
+    + "Im Zweifel relevant = false. Posts ohne Unternehmen: leeres tickers-Array und relevant=false.\n\nPosts:\n\n" + numbered;
   const body = { contents:[{ parts:[{ text: prompt }] }],
     generationConfig:{ responseMimeType:'application/json', responseSchema:{ type:'OBJECT', properties:{ results:{ type:'ARRAY', items:{ type:'OBJECT',
       properties:{ index:{type:'INTEGER'}, relevant:{type:'BOOLEAN'},
