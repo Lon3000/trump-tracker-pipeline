@@ -22,14 +22,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: OCR-/PDF-Werkzeuge installieren
-        run: sudo apt-get update && sudo apt-get install -y poppler-utils tesseract-ocr
+      - name: PDF-/OCR-Werkzeuge installieren
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils tesseract-ocr qpdf
 
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
 
       - name: Pipeline ausführen
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node track.mjs
 
       - name: Änderungen committen (nur falls vorhanden)
