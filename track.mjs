@@ -224,6 +224,30 @@ if (added > 0) {
   dataset.totals = { txCount:n, buyCount:buy, sellCount:sell, uniqueTickers:Object.keys(dataset.stocks).length };
   dataset.generatedAt = new Date().toISOString();
 }
+
+// Geschätztes nächstes Release = spätestes Filing-Datum + Median-Intervall der bisherigen Filings.
+// (278-T ist ereignisgesteuert; das ist eine Schätzung, kein fixer Termin.)
+function parseFilingDate(title) {
+  const m = /(\d{1,2})\.(\d{1,2})\.(\d{2,4})/.exec(title || '');
+  if (!m) return null;
+  let mo = +m[1], d = +m[2], y = +m[3]; if (y < 100) y += 2000;
+  if (mo < 1 || mo > 12 || d < 1 || d > 31) return null;
+  return Date.UTC(y, mo - 1, d);
+}
+const fdates = [...new Set(filings.map(f => parseFilingDate(f.title)).filter(Boolean))].sort((a, b) => a - b);
+if (fdates.length >= 1) {
+  let median = 35; // Fallback
+  if (fdates.length >= 3) {
+    const gaps = [];
+    for (let i = 1; i < fdates.length; i++) gaps.push((fdates[i] - fdates[i - 1]) / 86400000);
+    gaps.sort((a, b) => a - b);
+    median = Math.max(14, Math.round(gaps[Math.floor(gaps.length / 2)]));
+  }
+  const est = new Date(fdates[fdates.length - 1] + median * 86400000);
+  dataset.nextReleaseEstimate = est.toISOString().slice(0, 10);
+  console.log(`Nächstes Release (geschätzt): ${dataset.nextReleaseEstimate} (letztes Filing + ${median} Tage Median).`);
+}
+
 writeJSON(STATE, dataset);
 writeJSON(SEEN, seen);
 console.log(`\nFertig: ${added} neue Transaktionen, ${fresh.length} Filings verarbeitet.`);
