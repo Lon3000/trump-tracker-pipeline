@@ -89,9 +89,13 @@ const GEM_SCHEMA = { type:'OBJECT', properties:{ transactions:{ type:'ARRAY', it
 async function geminiCallPdf(pdfPath, attempt = 0) {
   const b64 = readFileSync(pdfPath).toString('base64');
   const body = { contents:[{ parts:[ { inline_data:{ mime_type:'application/pdf', data:b64 } }, { text:GEM_PROMPT } ] }],
-    // maxOutputTokens explizit hoch: sonst wird die JSON-Antwort bei vielen
-    // Transaktionen pro Chunk abgeschnitten -> "Unterminated string".
-    generationConfig:{ responseMimeType:'application/json', responseSchema:GEM_SCHEMA, maxOutputTokens: 65536 } };
+    // maxOutputTokens hoch + Thinking AUS: 2.5-flash "denkt" bei komplexen
+    // Scans zehntausende Tokens, die vom selben Budget abgehen — die JSON-
+    // Antwort wurde dadurch abgeschnitten ("Unterminated string", 06/25-
+    // Filings). thinkingBudget 0 => volles Budget für die Antwort; lokal
+    // verifiziert: 8-Seiten-Chunk -> finishReason STOP, 231 Transaktionen.
+    generationConfig:{ responseMimeType:'application/json', responseSchema:GEM_SCHEMA, maxOutputTokens: 65536,
+      thinkingConfig: { thinkingBudget: 0 } } };
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${process.env.GEMINI_API_KEY}`;
   const r = await fetch(url, { method:'POST', headers:{ 'Content-Type':'application/json' }, body:JSON.stringify(body) });
   if (r.status === 429 || r.status >= 500) { // Rate-Limit/Überlastung (503): gestaffelt warten
