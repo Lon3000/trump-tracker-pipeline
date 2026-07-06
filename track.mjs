@@ -21,7 +21,10 @@ import { fileURLToPath } from 'node:url';
 const UA = 'Trump-Trade-Tracker (personal project)';
 const DISCLOSURES_URL = 'https://www.whitehouse.gov/disclosures/';
 const GEMINI_MODEL = 'gemini-2.5-flash';
-const CHUNK_PAGES = 15; // Seiten je Gemini-Aufruf (begrenzt Request-Größe & Output)
+const CHUNK_PAGES = 8; // Seiten je Gemini-Aufruf. 15 war zu groß: bei dichten
+// Transaktions-Tabellen wurde die JSON-Antwort am Output-Limit abgeschnitten
+// ("Unterminated string", Filing 06/25) und 47-MB-Scans sprengten das
+// Inline-Request-Limit. 8 Seiten ≈ sichere Antwort- und Request-Größe.
 const HERE = dirname(fileURLToPath(import.meta.url));
 const STATE = join(HERE, 'state/dataset.json');
 const SEEN  = join(HERE, 'state/seenFilings.json');
@@ -86,11 +89,13 @@ const GEM_SCHEMA = { type:'OBJECT', properties:{ transactions:{ type:'ARRAY', it
 async function geminiCallPdf(pdfPath, attempt = 0) {
   const b64 = readFileSync(pdfPath).toString('base64');
   const body = { contents:[{ parts:[ { inline_data:{ mime_type:'application/pdf', data:b64 } }, { text:GEM_PROMPT } ] }],
-    generationConfig:{ responseMimeType:'application/json', responseSchema:GEM_SCHEMA } };
+    // maxOutputTokens explizit hoch: sonst wird die JSON-Antwort bei vielen
+    // Transaktionen pro Chunk abgeschnitten -> "Unterminated string".
+    generationConfig:{ responseMimeType:'application/json', responseSchema:GEM_SCHEMA, maxOutputTokens: 65536 } };
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${process.env.GEMINI_API_KEY}`;
   const r = await fetch(url, { method:'POST', headers:{ 'Content-Type':'application/json' }, body:JSON.stringify(body) });
-  if (r.status === 429) { // Rate-Limit: gestaffelt warten, begrenzt oft
-    if (attempt >= 4) throw new Error('Gemini 429: Rate-Limit nach mehreren Versuchen');
+  if (r.status === 429 || r.status >= 500) { // Rate-Limit/Überlastung (503): gestaffelt warten
+    if (attempt >= 4) throw new Error(`Gemini HTTP ${r.status}: nach mehreren Versuchen aufgegeben`);
     await sleep(20000 * (attempt + 1));
     return geminiCallPdf(pdfPath, attempt + 1);
   }
@@ -98,7 +103,13 @@ async function geminiCallPdf(pdfPath, attempt = 0) {
   const j = await r.json();
   const txt = j.candidates?.[0]?.content?.parts?.[0]?.text;
   if (!txt) throw new Error('Gemini: leere/abgelehnte Antwort');
-  return JSON.parse(txt).transactions || [];
+  try {
+    return JSON.parse(txt).transactions || [];
+  } catch (e) { // abgeschnittene/kaputte JSON-Antwort: einmal neu anfordern
+    if (attempt >= 2) throw new Error('Gemini: JSON-Antwort unvollständig (' + e.message.slice(0, 60) + ')');
+    await sleep(5000);
+    return geminiCallPdf(pdfPath, attempt + 1);
+  }
 }
 
 async function geminiExtract(pdfPath) {
@@ -201,6 +212,14 @@ for (const f of fresh) {
     }
     if (!parsed) { parsed = parseTextFallback(extractText(pdf)); console.log(`  Fallback (OCR/Regex): ${parsed.length} Transaktionen.`); }
 
+    // Ein 278-T ohne Transaktionen existiert nicht — 0 heißt: Extraktion ist
+    // fehlgeschlagen (z. B. Gemini 503/abgeschnitten + Scan ohne Textebene).
+    // Dann NICHT als gesehen markieren, damit der nächste Lauf es erneut versucht.
+    if (parsed.length === 0) {
+      console.log('  ! 0 Transaktionen extrahiert — Filing bleibt unmarkiert (Retry beim nächsten Lauf).');
+      continue;
+    }
+
     let n = 0;
     for (const t of parsed) {
       const id = txId(t);
@@ -228,11 +247,16 @@ if (added > 0) {
 // Geschätztes nächstes Release = spätestes Filing-Datum + Median-Intervall der bisherigen Filings.
 // (278-T ist ereignisgesteuert; das ist eine Schätzung, kein fixer Termin.)
 function parseFilingDate(title) {
-  const m = /(\d{1,2})\.(\d{1,2})\.(\d{2,4})/.exec(title || '');
-  if (!m) return null;
-  let mo = +m[1], d = +m[2], y = +m[3]; if (y < 100) y += 2000;
-  if (mo < 1 || mo > 12 || d < 1 || d > 31) return null;
-  return Date.UTC(y, mo - 1, d);
+  // Tolerant gegen WH-Tippfehler wie "0.6.25.26" (= 06.25.26): bei ungültigem
+  // Treffer nur EIN Zeichen weiterrücken und erneut versuchen, statt aufzugeben.
+  const re = /(\d{1,2})\.(\d{1,2})\.(\d{2,4})/g;
+  let m;
+  while ((m = re.exec(title || ''))) {
+    let mo = +m[1], d = +m[2], y = +m[3]; if (y < 100) y += 2000;
+    if (mo >= 1 && mo <= 12 && d >= 1 && d <= 31 && y >= 2020 && y <= 2035) return Date.UTC(y, mo - 1, d);
+    re.lastIndex = m.index + 1;
+  }
+  return null;
 }
 const fdates = [...new Set(filings.map(f => parseFilingDate(f.title)).filter(Boolean))].sort((a, b) => a - b);
 if (fdates.length >= 1) {
