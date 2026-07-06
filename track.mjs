@@ -97,8 +97,24 @@ async function geminiCallPdf(pdfPath, attempt = 0) {
     generationConfig:{ responseMimeType:'application/json', responseSchema:GEM_SCHEMA, maxOutputTokens: 65536,
       thinkingConfig: { thinkingBudget: 0 } } };
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${process.env.GEMINI_API_KEY}`;
-  const r = await fetch(url, { method:'POST', headers:{ 'Content-Type':'application/json' }, body:JSON.stringify(body) });
-  if (r.status === 429 || r.status >= 500) { // Rate-Limit/Überlastung (503): gestaffelt warten
+  let r;
+  try {
+    r = await fetch(url, { method:'POST', headers:{ 'Content-Type':'application/json' }, body:JSON.stringify(body) });
+  } catch (e) { // Netzwerkfehler ("fetch failed"): wie transienten Serverfehler behandeln
+    if (attempt >= 4) throw new Error('Gemini Netzwerkfehler: ' + e.message.slice(0, 80));
+    await sleep(15000 * (attempt + 1));
+    return geminiCallPdf(pdfPath, attempt + 1);
+  }
+  if (r.status === 429) {
+    const errTxt = await r.text();
+    // Tageskontingent erschöpft? Dann ist Warten sinnlos — sofort abbrechen,
+    // der nächste geplante Lauf (nach Quota-Reset) übernimmt.
+    if (/PerDay/i.test(errTxt)) throw new Error('Gemini: Tageskontingent erschöpft — Retry beim nächsten Lauf');
+    if (attempt >= 4) throw new Error('Gemini 429: Rate-Limit nach mehreren Versuchen');
+    await sleep(20000 * (attempt + 1));
+    return geminiCallPdf(pdfPath, attempt + 1);
+  }
+  if (r.status >= 500) { // Überlastung (503 etc.): gestaffelt warten
     if (attempt >= 4) throw new Error(`Gemini HTTP ${r.status}: nach mehreren Versuchen aufgegeben`);
     await sleep(20000 * (attempt + 1));
     return geminiCallPdf(pdfPath, attempt + 1);
@@ -116,6 +132,30 @@ async function geminiCallPdf(pdfPath, attempt = 0) {
   }
 }
 
+/**
+ * Extrahiert einen Seitenbereich; schlägt er trotz Retries fehl (z. B. Antwort
+ * sprengt trotz allem das Output-Limit bei extrem dichten Seiten), wird der
+ * Bereich rekursiv HALBIERT — bis hinunter zu einer Einzelseite.
+ */
+async function extractRange(pdfPath, s, e, depth = 0) {
+  const chunk = splitPdf(pdfPath, s, e) || pdfPath;
+  try {
+    const raw = await geminiCallPdf(chunk);
+    console.log(`    Seiten ${s}-${e}: ${raw.length} Transaktionen.`);
+    return raw;
+  } catch (err) {
+    if (e > s && depth < 4) {
+      const mid = Math.floor((s + e) / 2);
+      console.log(`    Seiten ${s}-${e} fehlgeschlagen (${err.message.slice(0, 60)}) — teile in ${s}-${mid} + ${mid + 1}-${e}.`);
+      const a = await extractRange(pdfPath, s, mid, depth + 1);
+      await sleep(7000);
+      const b = await extractRange(pdfPath, mid + 1, e, depth + 1);
+      return [...a, ...b];
+    }
+    throw err;
+  }
+}
+
 async function geminiExtract(pdfPath) {
   const pages = pdfPageCount(pdfPath);
   const ranges = [];
@@ -125,8 +165,7 @@ async function geminiExtract(pdfPath) {
   const out = [];
   for (let i = 0; i < ranges.length; i++) {
     const [s, e] = ranges[i];
-    const chunk = ranges.length === 1 ? pdfPath : (splitPdf(pdfPath, s, e) || pdfPath);
-    const raw = await geminiCallPdf(chunk);
+    const raw = await extractRange(pdfPath, s, e);
     for (const g of raw) {
       const amt = snapAmount(g.amount || '');
       out.push({
