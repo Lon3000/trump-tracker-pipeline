@@ -125,10 +125,11 @@ async function geminiCallPdf(pdfPath, attempt = 0) {
   if (!txt) throw new Error('Gemini: leere/abgelehnte Antwort');
   try {
     return JSON.parse(txt).transactions || [];
-  } catch (e) { // abgeschnittene/kaputte JSON-Antwort: einmal neu anfordern
-    if (attempt >= 2) throw new Error('Gemini: JSON-Antwort unvollständig (' + e.message.slice(0, 60) + ')');
-    await sleep(5000);
-    return geminiCallPdf(pdfPath, attempt + 1);
+  } catch (e) {
+    // Abgeschnittene JSON-Antwort = Output-Limit erreicht. Ein gleich großer
+    // Retry liefert dasselbe Ergebnis und verschwendet nur Quota — sofort
+    // werfen, das adaptive Halbieren in extractRange() übernimmt.
+    throw new Error('Gemini: JSON-Antwort unvollständig (' + e.message.slice(0, 60) + ')');
   }
 }
 
