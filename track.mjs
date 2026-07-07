@@ -74,8 +74,22 @@ function normalizeDate(s) {
 /* --- PRIMÄR: Gemini-Vision ---------------------------------------------- */
 function pdfPageCount(pdf) { const o = runQuiet('pdfinfo', [pdf]); const m = o && /Pages:\s*(\d+)/.exec(o); return m ? +m[1] : 1; }
 function splitPdf(pdf, s, e) {
-  const out = join(mkdtempSync(join(tmpdir(), 'chunk-')), 'c.pdf');
-  return runQuiet('qpdf', ['--pages', pdf, `${s}-${e}`, '--', out]) !== null ? out : null;
+  const dir = mkdtempSync(join(tmpdir(), 'chunk-'));
+  const out = join(dir, 'c.pdf');
+  // qpdf: "--empty" ist das Pflicht-Input-Placeholder. Die alte Syntax ohne
+  // --empty schlug IMMER fehl -> es wurde still das GANZE PDF gesendet, dessen
+  // Transaktionsliste jedes Output-Limit sprengt (Ursache der 143-KB-Abbrüche).
+  if (runQuiet('qpdf', ['--empty', '--pages', pdf, `${s}-${e}`, '--', out]) !== null && existsSync(out)) {
+    return out;
+  }
+  // Fallback: poppler (pdfseparate + pdfunite) — lokal verifizierter Weg.
+  if (runQuiet('pdfseparate', ['-f', String(s), '-l', String(e), pdf, join(dir, 'p%03d.pdf')]) !== null) {
+    const parts = readdirSync(dir).filter(f => /^p\d+\.pdf$/.test(f)).sort().map(f => join(dir, f));
+    if (parts.length === 1) return parts[0];
+    if (parts.length > 1 && runQuiet('pdfunite', [...parts, out]) !== null && existsSync(out)) return out;
+  }
+  console.log(`    ! PDF-Split ${s}-${e} FEHLGESCHLAGEN — sende Gesamtdokument (Output-Limit-Risiko!).`);
+  return null;
 }
 const GEM_PROMPT = "This is Donald Trump's OGE Form 278-T periodic transaction report (a scanned filing). "
   + "Extract EVERY transaction row across all pages. For each row return: "
