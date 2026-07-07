@@ -11,7 +11,7 @@
  * Kein Telegram hier — das macht der Webspace-Tracker, der dataset.json liest.
  */
 
-import { readFileSync, writeFileSync, existsSync, mkdtempSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, mkdtempSync, readdirSync, mkdirSync, rmSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { tmpdir } from 'node:os';
@@ -28,6 +28,7 @@ const CHUNK_PAGES = 8; // Seiten je Gemini-Aufruf. 15 war zu groß: bei dichten
 const HERE = dirname(fileURLToPath(import.meta.url));
 const STATE = join(HERE, 'state/dataset.json');
 const SEEN  = join(HERE, 'state/seenFilings.json');
+const PARTIALS = join(HERE, 'state/partials'); // Zwischenstände je Filing (Chunk-Cache)
 const TICKERS = join(HERE, 'tickers.json');
 
 /* --- Helfer ------------------------------------------------------------- */
@@ -171,16 +172,42 @@ async function extractRange(pdfPath, s, e, depth = 0) {
   }
 }
 
-async function geminiExtract(pdfPath) {
+/**
+ * Extrahiert das ganze Dokument chunk-weise. `partial` ist der persistente
+ * Chunk-Cache des Filings ("s-e" -> rohe Gemini-Zeilen): bereits gelungene
+ * Bereiche werden NICHT erneut angefragt (spart Quota bei Retries). Schlägt
+ * ein Bereich endgültig fehl, machen die übrigen trotzdem weiter — Rückgabe
+ * ist { txs, complete }; bei complete=false holt der nächste Lauf den Rest.
+ */
+async function geminiExtract(pdfPath, partial = {}) {
   const pages = pdfPageCount(pdfPath);
   const ranges = [];
   if (pages <= CHUNK_PAGES) ranges.push([1, pages]);
   else for (let s = 1; s <= pages; s += CHUNK_PAGES) ranges.push([s, Math.min(pages, s + CHUNK_PAGES - 1)]);
 
   const out = [];
+  let complete = true, quotaDead = false;
   for (let i = 0; i < ranges.length; i++) {
     const [s, e] = ranges[i];
-    const raw = await extractRange(pdfPath, s, e);
+    const key = `${s}-${e}`;
+    let raw = partial[key];
+    if (raw) {
+      console.log(`    Seiten ${key}: ${raw.length} Transaktionen (aus Zwischenspeicher).`);
+    } else if (quotaDead) {
+      complete = false; // Tageskontingent weg — weitere Versuche sind sinnlos
+      continue;
+    } else {
+      try {
+        raw = await extractRange(pdfPath, s, e);
+        partial[key] = raw;
+      } catch (err) {
+        console.log(`    Seiten ${key} endgültig fehlgeschlagen: ${err.message.slice(0, 80)}`);
+        complete = false;
+        if (/Tageskontingent/.test(err.message)) quotaDead = true;
+        continue;
+      }
+      if (i < ranges.length - 1) await sleep(7000); // Free-Tier-RPM schonen
+    }
     for (const g of raw) {
       const amt = snapAmount(g.amount || '');
       out.push({
@@ -192,9 +219,8 @@ async function geminiExtract(pdfPath) {
         rawDescription: (g.company || '').trim(),
       });
     }
-    if (ranges.length > 1 && i < ranges.length - 1) await sleep(7000); // Free-Tier-RPM schonen (unter dem Minutenlimit bleiben)
   }
-  return out;
+  return { txs: out, complete };
 }
 
 /* --- FALLBACK: pdftotext/Tesseract + Regex ------------------------------ */
@@ -263,12 +289,19 @@ for (const f of fresh) {
   const pdf = join(mkdtempSync(join(tmpdir(), 'ptr-')), 'r.pdf');
   try {
     await download(f.url, pdf);
-    let parsed = null;
+    let parsed = null, complete = true;
+    const partialPath = join(PARTIALS, sha1(f.key) + '.json');
     if (useGemini) {
-      try { parsed = await geminiExtract(pdf); console.log(`  Gemini: ${parsed.length} Transaktionen.`); }
-      catch (e) { console.log(`  ! Gemini-Fehler: ${e.message} — Fallback auf OCR.`); parsed = null; }
+      const partial = readJSON(partialPath, {});
+      try {
+        const res = await geminiExtract(pdf, partial);
+        parsed = res.txs; complete = res.complete;
+        console.log(`  Gemini: ${parsed.length} Transaktionen${complete ? '' : ' (TEILWEISE — Rest folgt)'}.`);
+      } catch (e) { console.log(`  ! Gemini-Fehler: ${e.message} — Fallback auf OCR.`); parsed = null; complete = true; }
+      // Chunk-Cache sichern: erneute Läufe überspringen bereits gelungene Seiten.
+      if (Object.keys(partial).length) { mkdirSync(PARTIALS, { recursive: true }); writeJSON(partialPath, partial); }
     }
-    if (!parsed) { parsed = parseTextFallback(extractText(pdf)); console.log(`  Fallback (OCR/Regex): ${parsed.length} Transaktionen.`); }
+    if (!parsed || parsed.length === 0) { parsed = parseTextFallback(extractText(pdf)); console.log(`  Fallback (OCR/Regex): ${parsed.length} Transaktionen.`); }
 
     // Ein 278-T ohne Transaktionen existiert nicht — 0 heißt: Extraktion ist
     // fehlgeschlagen (z. B. Gemini 503/abgeschnitten + Scan ohne Textebene).
@@ -289,7 +322,13 @@ for (const f of fresh) {
       n++; added++;
     }
     console.log(`  ${n} neue Transaktionen übernommen.`);
-    seen[f.key] = { title:f.title, url:f.url, count:n, processedAt:new Date().toISOString() };
+    if (complete) {
+      // Erst wenn ALLE Seiten extrahiert sind, gilt das Filing als erledigt.
+      seen[f.key] = { title:f.title, url:f.url, count:n, processedAt:new Date().toISOString() };
+      rmSync(partialPath, { force: true });
+    } else {
+      console.log('  Filing TEILWEISE verarbeitet — fehlende Seiten beim nächsten Lauf (Zwischenstand gesichert, Dedup verhindert Dubletten).');
+    }
   } catch (e) {
     console.log(`  ! Fehler: ${e.message} — wird nächstes Mal erneut versucht.`);
   }

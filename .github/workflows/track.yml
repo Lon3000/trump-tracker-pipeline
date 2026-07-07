@@ -6,7 +6,10 @@ name: Track Trump PTRs
 
 on:
   schedule:
-    - cron: '17 */6 * * *'   # alle 6 Stunden (Minute 17, um Lastspitzen zu meiden)
+    # Gemini-Free-Tier-Tageskontingent resettet um Mitternacht Pacific = 07:00
+    # UTC (Sommer). Erster Lauf bewusst KURZ DANACH (07:23), damit große
+    # Filings täglich einen Lauf mit vollem Kontingent bekommen.
+    - cron: '23 7,13,19,1 * * *'
   workflow_dispatch: {}       # manueller Start per Knopf
 
 permissions:
