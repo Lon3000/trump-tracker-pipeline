@@ -1,13 +1,10 @@
 {
- "generatedAt": "2026-05-17T03:32:51.666Z",
+ "generatedAt": "2026-07-07T16:08:09.234Z",
  "totals": {
-  "txCount": 3642,
-  "buyCount": 2346,
-  "sellCount": 1296,
-  "totalVolume": 441453321,
-  "netFlow": 83567025,
-  "uniqueTickers": 1025,
-  "unresolvedCount": 0
+  "txCount": 3869,
+  "buyCount": 2465,
+  "sellCount": 1404,
+  "uniqueTickers": 1041
  },
  "stocks": {
   "VOO": {
@@ -580,6 +577,60 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "ADOBE INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,000,001 - $5,000,000",
+     "mid": 3000000.5,
+     "low": 1000001,
+     "high": 5000000,
+     "rawDescription": "ADOBE INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ADOBE INC"
+    },
+    {
+     "date": "2026-04-07",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ADOBE INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ADOBE INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "ADOBE INC. (DELAWARE)"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "Adobe Sys Inc"
     }
    ],
    "resolution": "exact"
@@ -734,6 +785,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "WORKDAY INC CLASS A"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,000,001 - $5,000,000",
+     "mid": 3000000.5,
+     "low": 1000001,
+     "high": 5000000,
+     "rawDescription": "WORKDAY INCCL A"
     }
    ],
    "resolution": "exact"
@@ -1152,6 +1212,15 @@
      "low": 500001,
      "high": 1000000,
      "rawDescription": "MICROSOFT CORP UNSOLICITED"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$5,000,001 - $25,000,000",
+     "mid": 15000000.5,
+     "low": 5000001,
+     "high": 25000000,
+     "rawDescription": "MICROSOFT CORP COM"
     }
    ],
    "resolution": "exact"
@@ -1379,6 +1448,15 @@
      "mid": 75000.5,
      "low": 50001,
      "high": 100000,
+     "rawDescription": "SYNOPSYS INC COM"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,000,001 - $5,000,000",
+     "mid": 3000000.5,
+     "low": 1000001,
+     "high": 5000000,
      "rawDescription": "SYNOPSYS INC COM"
     }
    ],
@@ -2074,6 +2152,15 @@
      "low": 50001,
      "high": 100000,
      "rawDescription": "FIDELITY NATL INFORMATION SVCS INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "FIDELITY NATL INFORMATION SVCS INC"
     }
    ],
    "resolution": "exact"
@@ -2390,6 +2477,15 @@
      "low": 50001,
      "high": 100000,
      "rawDescription": "TRANSDIGM GROUP INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,000,001 - $5,000,000",
+     "mid": 3000000.5,
+     "low": 1000001,
+     "high": 5000000,
+     "rawDescription": "TRANSDIGM GROUP INC"
     }
    ],
    "resolution": "exact"
@@ -2613,6 +2709,78 @@
      "mid": 175000.5,
      "low": 100001,
      "high": 250000,
+     "rawDescription": "AMAZON COM INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$5,000,001 - $25,000,000",
+     "mid": 15000000.5,
+     "low": 5000001,
+     "high": 25000000,
+     "rawDescription": "Amazon Com Inc"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "Amazon Com Inc"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "AMAZON COM INC"
+    },
+    {
+     "date": "2026-04-28",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AMAZON COM INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AMAZON COM INC"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AMAZON COM INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AMAZON COM INC"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
      "rawDescription": "AMAZON COM INC"
     }
    ],
@@ -3286,6 +3454,15 @@
      "low": 500001,
      "high": 1000000,
      "rawDescription": "UBER TECHNOLOGIES INC COM"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "UBER TECHNOLOGIES INC COM"
     }
    ],
    "resolution": "exact"
@@ -3464,6 +3641,42 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "APPLE INC"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "APPLE INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "APPLE INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
+     "rawDescription": "Apple Inc Com"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "APPLE INC COM"
     }
    ],
    "resolution": "exact"
@@ -3918,6 +4131,42 @@
      "low": 250001,
      "high": 500000,
      "rawDescription": "ACCENTURE PLC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "ACCENTURE PLC IRELAND"
+    },
+    {
+     "date": "2026-04-28",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ACCENTURE PLC IRELAND F CLASS CLASS A"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "Accenture Plc Ireland Shs Cl A"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "purchase",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "ACCENTURE PLC IRELAND SHS CL A"
     }
    ],
    "resolution": "exact"
@@ -4102,6 +4351,24 @@
      "low": 50001,
      "high": 100000,
      "rawDescription": "ADVANCED MICRO DEVICES INC UNSOLICITED"
+    },
+    {
+     "date": "2026-04-07",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ADVANCED MICRO DEVICES INC"
+    },
+    {
+     "date": "2026-04-09",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "ADVANCED MICRO DEVICES INC"
     }
    ],
    "resolution": "exact"
@@ -4338,6 +4605,15 @@
      "low": 250001,
      "high": 500000,
      "rawDescription": "AVALONBAY CMNTYS INC COM"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "AVALONBAY CMNTYS INC COM"
     }
    ],
    "resolution": "exact"
@@ -4471,6 +4747,15 @@
      "mid": 175000.5,
      "low": 100001,
      "high": 250000,
+     "rawDescription": "DATADOG INC CL A COM"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
      "rawDescription": "DATADOG INC CL A COM"
     }
    ],
@@ -4646,6 +4931,33 @@
      "low": 500001,
      "high": 1000000,
      "rawDescription": "Alphabet Inc Cl A Solicited Order Discretion Exercised"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "ALPHABET INC CAP STK CL A"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "ALPHABET INC CL A"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "Alphabet Inc Cl A"
     }
    ],
    "resolution": "exact"
@@ -4720,6 +5032,24 @@
      "low": 500001,
      "high": 1000000,
      "rawDescription": "AMPHENOL CORP NEW"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AMPHENOL CORP NEW CL A"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "AMPHENOL CORPORATION CLASS A"
     }
    ],
    "resolution": "exact"
@@ -5066,6 +5396,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "PAYCHEX INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
+     "rawDescription": "PAYCHEX INC COM"
     }
    ],
    "resolution": "exact"
@@ -5378,6 +5717,15 @@
      "low": 50001,
      "high": 100000,
      "rawDescription": "LINDE PLC F"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "LINDE PLC SHS"
     }
    ],
    "resolution": "exact"
@@ -5540,6 +5888,24 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "AIRBNB INC CL A"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AIRBNB INC CL A"
+    },
+    {
+     "date": "2026-04-07",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AIRBNB INC CL A"
     }
    ],
    "resolution": "exact"
@@ -5663,6 +6029,15 @@
      "mid": 375000.5,
      "low": 250001,
      "high": 500000,
+     "rawDescription": "BOSTON SCIENTIFIC CORP COM"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
      "rawDescription": "BOSTON SCIENTIFIC CORP COM"
     }
    ],
@@ -5960,6 +6335,24 @@
      "low": 500001,
      "high": 1000000,
      "rawDescription": "APPLIED MATERIALS COM"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "APPLIED MATERIALS INC"
+    },
+    {
+     "date": "2026-04-09",
+     "type": "sale",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "APPLIED MATERIALS INC"
     }
    ],
    "resolution": "exact"
@@ -6064,6 +6457,15 @@
      "low": 500001,
      "high": 1000000,
      "rawDescription": "STRYKER CORP COM"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
+     "rawDescription": "STRYKER CORP COM"
     }
    ],
    "resolution": "exact"
@@ -6117,6 +6519,15 @@
      "mid": 175000.5,
      "low": 100001,
      "high": 250000,
+     "rawDescription": "LENNOX INTL INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,000,001 - $5,000,000",
+     "mid": 3000000.5,
+     "low": 1000001,
+     "high": 5000000,
      "rawDescription": "LENNOX INTL INC"
     }
    ],
@@ -6370,6 +6781,15 @@
      "low": 250001,
      "high": 500000,
      "rawDescription": "ROPER TECHNOLOGIES, INC."
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "ROPER TECHNOLOGIES, INC"
     }
    ],
    "resolution": "fuzzy"
@@ -7432,6 +7852,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "Meta Platforms, Inc"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$5,000,001 - $25,000,000",
+     "mid": 15000000.5,
+     "low": 5000001,
+     "high": 25000000,
+     "rawDescription": "Meta Platforms, Inc"
     }
    ],
    "resolution": "exact"
@@ -7810,6 +8239,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "SUPER MICRO COMPUTER INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "SUPER MICRO COMPUTER INC COM NEW"
     }
    ],
    "resolution": "exact"
@@ -7937,6 +8375,15 @@
      "mid": 32500.5,
      "low": 15001,
      "high": 50000,
+     "rawDescription": "INTERCONTINENTALEXCHANGE INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
      "rawDescription": "INTERCONTINENTALEXCHANGE INC"
     }
    ],
@@ -8200,6 +8647,24 @@
      "low": 250001,
      "high": 500000,
      "rawDescription": "ARES MANAGEMENT CORPORATION CL A COM"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ARES MANAGEMENT CORPORATION"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ARES MGMT CORP CLASS CLASS A"
     }
    ],
    "resolution": "exact"
@@ -8253,6 +8718,15 @@
      "mid": 375000.5,
      "low": 250001,
      "high": 500000,
+     "rawDescription": "WASTE MGMT INC DEL"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
      "rawDescription": "WASTE MGMT INC DEL"
     }
    ],
@@ -8792,6 +9266,15 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "HOME DEPOT INC COM"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,000,001 - $5,000,000",
+     "mid": 3000000.5,
+     "low": 1000001,
+     "high": 5000000,
+     "rawDescription": "HOME DEPOT INC COM"
     }
    ],
    "resolution": "exact"
@@ -9094,6 +9577,15 @@
      "low": 250001,
      "high": 500000,
      "rawDescription": "NETFLIX INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
+     "rawDescription": "NETFLIX COM INC"
     }
    ],
    "resolution": "exact"
@@ -9494,6 +9986,15 @@
      "low": 250001,
      "high": 500000,
      "rawDescription": "ECOLAB INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "ECOLAB INC"
     }
    ],
    "resolution": "exact"
@@ -9736,6 +10237,33 @@
      "low": 250001,
      "high": 500000,
      "rawDescription": "APOLLO GLOBAL MGMT INC COM"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "APOLLO GLOBAL MANAGEMENT INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "APOLLO GLOBAL MGMT INC COM"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "APOLLO GLOBAL MGMT INC N CLASS CLASS A"
     }
    ],
    "resolution": "exact"
@@ -10150,6 +10678,15 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "VERISK ANALYTICS, INC."
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "VERISK ANALYTICS, INC."
     }
    ],
    "resolution": "exact"
@@ -10512,6 +11049,15 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "Godaddy Inc"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "Godaddy Inc"
     }
    ],
    "resolution": "exact"
@@ -10670,6 +11216,15 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "UNITED DOMINION REALTY TRUST INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "UNITED DOMINION REALTY TRUST INC"
     }
    ],
    "resolution": "exact"
@@ -10729,6 +11284,15 @@
      "n": 158,
      "date": "2026-01-06",
      "type": "purchase",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "TRACTOR SUPPLY CO"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
      "amount": "$100,001 - $250,000",
      "mid": 175000.5,
      "low": 100001,
@@ -11108,6 +11672,60 @@
      "low": 500001,
      "high": 1000000,
      "rawDescription": "ABBOTT LABS INC COM"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "ABBOTT LABS INC COM"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "ABBOTT LABORATORIES"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "ABBOTT LABORATORIES"
+    },
+    {
+     "date": "2026-04-28",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ABBOTT LABS"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ABBOTT LABS"
+    },
+    {
+     "date": "2026-04-20",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "ABBOTT LABS"
     }
    ],
    "resolution": "exact"
@@ -11588,6 +12206,15 @@
      "low": 500001,
      "high": 1000000,
      "rawDescription": "S&P GLOBAL INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
+     "rawDescription": "S&P GLOBAL INC"
     }
    ],
    "resolution": "exact"
@@ -11826,6 +12453,42 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "AT & T INC"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AT&T INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AT&T INC"
+    },
+    {
+     "date": "2026-04-20",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "AT&T INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "AT&T INC"
     }
    ],
    "resolution": "exact"
@@ -11940,6 +12603,15 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "AON PLC SHS CL A"
+    },
+    {
+     "date": "2026-04-07",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AON PLC"
     }
    ],
    "resolution": "exact"
@@ -12400,6 +13072,15 @@
      "low": 50001,
      "high": 100000,
      "rawDescription": "MARSH & MCLENNAN COS INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
+     "rawDescription": "MARSH"
     }
    ],
    "resolution": "exact"
@@ -12636,6 +13317,15 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "TRIMBLE NAV LTD"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "TRIMBLE NAV LTD"
     }
    ],
    "resolution": "exact"
@@ -12810,6 +13500,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "VISA INC CLASS A"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,000,001 - $5,000,000",
+     "mid": 3000000.5,
+     "low": 1000001,
+     "high": 5000000,
+     "rawDescription": "VISA INC-CLASS A SHARES"
     }
    ],
    "resolution": "exact"
@@ -12864,6 +13563,24 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "ALEXANDRIA REAL ESTATE EQUITIES INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "ALEXANDRIA REAL ESTATE EQUITIES INC"
+    },
+    {
+     "date": "2026-04-20",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ALEXANDRIA REAL ESTATE E REIT"
     }
    ],
    "resolution": "exact"
@@ -12931,6 +13648,15 @@
      "mid": 32500.5,
      "low": 15001,
      "high": 50000,
+     "rawDescription": "MARTIN MARIETTA MATLS INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
      "rawDescription": "MARTIN MARIETTA MATLS INC"
     }
    ],
@@ -13390,6 +14116,15 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "FACTSET RESH SYS INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
+     "rawDescription": "FACTSET RESH SYS INC"
     }
    ],
    "resolution": "exact"
@@ -13544,6 +14279,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "BERKSHIRE HATHAWAY CLASS B"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,000,001 - $5,000,000",
+     "mid": 3000000.5,
+     "low": 1000001,
+     "high": 5000000,
+     "rawDescription": "BERKSHIRE HATHAWAY INC-CL B"
     }
    ],
    "resolution": "exact"
@@ -14046,6 +14790,15 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "GARTNER GROUP INC NEW"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "GARTNER GROUP INC NEW"
     }
    ],
    "resolution": "exact"
@@ -14498,6 +15251,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "PALANTIR TECHNOLOGIES INC CL A"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$1,000,001 - $5,000,000",
+     "mid": 3000000.5,
+     "low": 1000001,
+     "high": 5000000,
+     "rawDescription": "PALANTIR TECHNOLOGIES INC CL A"
     }
    ],
    "resolution": "exact"
@@ -14592,6 +15354,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "BROADRIDGE FINL SOLUTION"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "BROADRIDGE FINL SOLUTIONS INC"
     }
    ],
    "resolution": "exact"
@@ -14680,6 +15451,15 @@
      "low": 50001,
      "high": 100000,
      "rawDescription": "CLOROX CO"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "CLOROX COMPANY"
     }
    ],
    "resolution": "exact"
@@ -15650,6 +16430,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "REPUBLIC SVCS INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
+     "rawDescription": "REPUBLIC SVCS INC"
     }
    ],
    "resolution": "exact"
@@ -16294,6 +17083,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "MASTERCARD INC CLASS A"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,000,001 - $5,000,000",
+     "mid": 3000000.5,
+     "low": 1000001,
+     "high": 5000000,
+     "rawDescription": "MASTERCARD INCORPORATED"
     }
    ],
    "resolution": "exact"
@@ -16482,6 +17280,33 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "AMERICAN TOWER CORP NEW REIT"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AMERICAN TOWER CORP NEW REIT"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AMERICAN TOWER CORP NEW REIT"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "AMERICAN TOWER CORPORATION REIT A"
     }
    ],
    "resolution": "exact"
@@ -16600,6 +17425,33 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "AUTOMATIC DATA PROCESSIN"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AUTOMATIC DATA PROCESSIN"
+    },
+    {
+     "date": "2026-04-20",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AUTOMATIC DATA PROCESSIN"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "AUTOMATIC DATA PROCESSING INC"
     }
    ],
    "resolution": "exact"
@@ -16742,6 +17594,15 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "MONDELEZ INTL INC CLASS A"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "MONDELEZ INTL INC"
     }
    ],
    "resolution": "exact"
@@ -17248,6 +18109,24 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "ANALOG DEVICES INC UNSOLICITED"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ANALOG DEVICES INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ANALOG DEVICES INC"
     }
    ],
    "resolution": "exact"
@@ -17900,6 +18779,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "UNITEDHEALTH GROUP INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$1,000,001 - $5,000,000",
+     "mid": 3000000.5,
+     "low": 1000001,
+     "high": 5000000,
+     "rawDescription": "UNITEDHEALTH GROUP INC"
     }
    ],
    "resolution": "exact"
@@ -18520,6 +19408,15 @@
      "low": 500001,
      "high": 1000000,
      "rawDescription": "MOODYS CORP COM"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "MOODYS CORP COM"
     }
    ],
    "resolution": "exact"
@@ -18792,6 +19689,33 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "ATLASSIAN CORP CLASS A"
+    },
+    {
+     "date": "2026-04-07",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ATLASSIAN CORP CL A"
+    },
+    {
+     "date": "2026-04-20",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "ATLASSIAN CORP CLASS CLASS A"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ATLASSIAN CORP CLASS CLASS A"
     }
    ],
    "resolution": "exact"
@@ -18875,6 +19799,15 @@
      "mid": 75000.5,
      "low": 50001,
      "high": 100000,
+     "rawDescription": "VERTEX PHARMACEUTICALS INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
      "rawDescription": "VERTEX PHARMACEUTICALS INC"
     }
    ],
@@ -19416,6 +20349,42 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "ABBVIE INC"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "ABBVIE INC"
+    },
+    {
+     "date": "2026-04-28",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ABBVIE INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "ABBVIE INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "Abbvie Inc Com"
     }
    ],
    "resolution": "exact"
@@ -19730,6 +20699,15 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "T-MOBILE US INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "T-MOBILE US INC USD0.001"
     }
    ],
    "resolution": "exact"
@@ -20117,6 +21095,15 @@
      "n": 3187,
      "date": "2026-01-26",
      "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ALARM COM HLDGS INC"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "purchase",
      "amount": "$15,001 - $50,000",
      "mid": 32500.5,
      "low": 15001,
@@ -20688,6 +21675,42 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "APPLOVIN CORP COM CL A"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "APPLOVIN CORP CL A"
+    },
+    {
+     "date": "2026-04-07",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "APPLOVIN CORP CL A"
+    },
+    {
+     "date": "2026-04-28",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "APPLOVIN CORP COM CL A"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "APPLOVIN CORPORATION CLASS A"
     }
    ],
    "resolution": "exact"
@@ -21098,6 +22121,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "MCDONALDS CORP"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "MCDONALDS CORP COM"
     }
    ],
    "resolution": "exact"
@@ -21191,6 +22223,15 @@
      "mid": 8000.5,
      "low": 1001,
      "high": 15000,
+     "rawDescription": "BROWN & BROWN INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
      "rawDescription": "BROWN & BROWN INC"
     }
    ],
@@ -22024,6 +23065,15 @@
      "low": 50001,
      "high": 100000,
      "rawDescription": "AMERICAN EXPRESS CO"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AMERICAN Express Co"
     }
    ],
    "resolution": "exact"
@@ -22088,6 +23138,42 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "AMCOR PLC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "AMCOR PLC COM NEW"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AMCOR PLC"
+    },
+    {
+     "date": "2026-04-20",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AMCOR PLC F"
+    },
+    {
+     "date": "2026-04-20",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AMCOR PLC F"
     }
    ],
    "resolution": "exact"
@@ -22191,6 +23277,15 @@
      "mid": 8000.5,
      "low": 1001,
      "high": 15000,
+     "rawDescription": "COSTAR GROUP INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
      "rawDescription": "COSTAR GROUP INC"
     }
    ],
@@ -22776,6 +23871,33 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "ARISTA NETWORKS INC COM USD0.0001 ("
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "ARISTA NETWORKS INC"
+    },
+    {
+     "date": "2026-04-09",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "ARISTA NETWORKS INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "Arista Networks Inc Com New"
     }
    ],
    "resolution": "exact"
@@ -23085,6 +24207,42 @@
      "mid": 32500.5,
      "low": 15001,
      "high": 50000,
+     "rawDescription": "AUTODESK INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AUTODESK INC"
+    },
+    {
+     "date": "2026-04-07",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AUTODESK INC"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "AUTODESK INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
      "rawDescription": "AUTODESK INC"
     }
    ],
@@ -23415,6 +24573,42 @@
      "mid": 375000.5,
      "low": 250001,
      "high": 500000,
+     "rawDescription": "AUTOZONE INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "AUTOZONE INC"
+    },
+    {
+     "date": "2026-04-20",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AUTOZONE INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "AUTOZONE INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
      "rawDescription": "AUTOZONE INC"
     }
    ],
@@ -23867,6 +25061,15 @@
      "mid": 75000.5,
      "low": 50001,
      "high": 100000,
+     "rawDescription": "AKAMAI TECHNOLOGIES INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
      "rawDescription": "AKAMAI TECHNOLOGIES INC"
     }
    ],
@@ -25092,6 +26295,42 @@
      "low": 500001,
      "high": 1000000,
      "rawDescription": "ALTRIA GROUP INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$1,000,001 - $5,000,000",
+     "mid": 3000000.5,
+     "low": 1000001,
+     "high": 5000000,
+     "rawDescription": "ALTRIA GROUP INC"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "ALTRIA GROUP INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "ALTRIA GROUP INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ALTRIA GROUP INC"
     }
    ],
    "resolution": "exact"
@@ -25646,6 +26885,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "ARTISAN PARTNERS ASSET M CLASS A"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ARTISAN PARTNERS ASSET M CLASS CLASS A"
     }
    ],
    "resolution": "exact"
@@ -26792,6 +28040,15 @@
      "low": 50001,
      "high": 100000,
      "rawDescription": "ABM INDS INC"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "ABM INDS INC"
     }
    ],
    "resolution": "exact"
@@ -26834,6 +28091,15 @@
     {
      "n": 640,
      "date": "2026-03-17",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "ARES CAPITAL CORP"
+    },
+    {
+     "date": "2026-04-15",
      "type": "purchase",
      "amount": "$50,001 - $100,000",
      "mid": 75000.5,
@@ -26945,6 +28211,15 @@
      "mid": 75000.5,
      "low": 50001,
      "high": 100000,
+     "rawDescription": "ARCOSA INC"
+    },
+    {
+     "date": "2026-04-20",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
      "rawDescription": "ARCOSA INC"
     }
    ],
@@ -27122,6 +28397,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "APELLIS PHARMACEUTICALS"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "purchase",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "APELLIS PHARMACEUTICALS TENDER OFFER EXP: 05/13/26"
     }
    ],
    "resolution": "exact"
@@ -28228,6 +29512,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "VICI PPTYS INC REIT"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "VICI Properties Inc."
     }
    ],
    "resolution": "exact"
@@ -29820,6 +31113,15 @@
      "low": 50001,
      "high": 100000,
      "rawDescription": "OTIS WORLDWIDE CORP"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "OTIS WORLDWIDE CORP"
     }
    ],
    "resolution": "exact"
@@ -30448,6 +31750,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "AVANTOR INC"
+    },
+    {
+     "date": "2026-04-28",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AVANTOR INC"
     }
    ],
    "resolution": "exact"
@@ -30678,6 +31989,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "APOGEE ENTERPRISES INC"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "APOGEE ENTERPRISES INC"
     }
    ],
    "resolution": "exact"
@@ -30869,6 +32189,15 @@
      "mid": 175000.5,
      "low": 100001,
      "high": 250000,
+     "rawDescription": "GLOBAL PMTS INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
      "rawDescription": "GLOBAL PMTS INC"
     }
    ],
@@ -31560,6 +32889,33 @@
      "low": 50001,
      "high": 100000,
      "rawDescription": "AMERICAN INTL GROUP INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AMERICAN INTERNATIONAL GROUP INC"
+    },
+    {
+     "date": "2026-04-28",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AMERICAN INTL GROUP INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AMERICAN INTL GROUP INC COM NEW"
     }
    ],
    "resolution": "exact"
@@ -31652,6 +33008,15 @@
     {
      "n": 840,
      "date": "2026-01-06",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "LULULEMON ATHLETICA INC"
+    },
+    {
+     "date": "2026-04-17",
      "type": "purchase",
      "amount": "$15,001 - $50,000",
      "mid": 32500.5,
@@ -32116,6 +33481,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "ADMA BIOLOGICS INC"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "ADMA BIOLOGICS INC"
     }
    ],
    "resolution": "exact"
@@ -32189,6 +33563,15 @@
      "n": 983,
      "date": "2026-02-12",
      "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ADT INC DEL"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "sale",
      "amount": "$15,001 - $50,000",
      "mid": 32500.5,
      "low": 15001,
@@ -32518,6 +33901,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "LAUDER ESTEE COS CL A UNSOLICITED"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "LAUDER ESTEE COS INC CL A"
     }
    ],
    "resolution": "exact"
@@ -33414,6 +34806,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "ALLSTATE CORP"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "ALLSTATE CORP COM"
     }
    ],
    "resolution": "exact"
@@ -33698,6 +35099,33 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "AGILENT TECHNOLOGIES INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "AGILENT TECHNOLOGIES INC"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AGILENT TECHNOLOGIES INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "Agilent Technologies Inc Com"
     }
    ],
    "resolution": "exact"
@@ -34215,6 +35643,15 @@
      "mid": 32500.5,
      "low": 15001,
      "high": 50000,
+     "rawDescription": "ASBURY AUTOMOTIVE GROUP"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
      "rawDescription": "ASBURY AUTOMOTIVE GROUP"
     }
    ],
@@ -35094,6 +36531,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "CONSTELLATION ENERGY COR"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "CONSTELLATION ENERGY CORP COM"
     }
    ],
    "resolution": "exact"
@@ -35390,6 +36836,15 @@
     {
      "n": 1041,
      "date": "2026-03-04",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ALAMO GROUP INC"
+    },
+    {
+     "date": "2026-04-30",
      "type": "purchase",
      "amount": "$15,001 - $50,000",
      "mid": 32500.5,
@@ -35866,6 +37321,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "GE HEALTHCARE TECHNOLOGIES INC UNSOLICITED"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "GE HEALTHCARE TECHNOLOGIES INC"
     }
    ],
    "resolution": "exact"
@@ -36041,6 +37505,15 @@
      "mid": 375000.5,
      "low": 250001,
      "high": 500000,
+     "rawDescription": "O REILLY AUTOMOTIVE INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
      "rawDescription": "O REILLY AUTOMOTIVE INC"
     }
    ],
@@ -36464,6 +37937,24 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "AIR PRODS & CHEMS INC"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AIR PRODUCTS & CHEMICALS INC"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AIR PRODUCTS & CHEMICALS INC"
     }
    ],
    "resolution": "exact"
@@ -36507,6 +37998,15 @@
      "mid": 32500.5,
      "low": 15001,
      "high": 50000,
+     "rawDescription": "KENVUE INC COM"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
      "rawDescription": "KENVUE INC COM"
     }
    ],
@@ -37084,6 +38584,33 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "AMGEN INC"
+    },
+    {
+     "date": "2026-04-28",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AMGEN INC"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AMGEN INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "AMGEN INC"
     }
    ],
    "resolution": "exact"
@@ -37574,6 +39101,15 @@
     {
      "n": 1265,
      "date": "2026-01-26",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AMERISAFE INC"
+    },
+    {
+     "date": "2026-04-10",
      "type": "purchase",
      "amount": "$15,001 - $50,000",
      "mid": 32500.5,
@@ -38660,6 +40196,33 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "AMER ELECTRIC POWER CO UNSOLICITED"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AMERICAN ELECTRIC POWER COMPANY INC"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AMERICAN ELECTRIC POWER COMPANY INC"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AMERICAN ELECTRIC POWER COMPANY INC"
     }
    ],
    "resolution": "exact"
@@ -39719,6 +41282,15 @@
      "n": 1417,
      "date": "2026-03-04",
      "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ARMSTRONG WORLD INDS INC"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "sale",
      "amount": "$15,001 - $50,000",
      "mid": 32500.5,
      "low": 15001,
@@ -41558,6 +43130,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "ADDUS HOMECARE CORP"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ADDUS HOMECARE CORP"
     }
    ],
    "resolution": "exact"
@@ -43086,6 +44667,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "AGILYSYS INC"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AGILYSYS INC"
     }
    ],
    "resolution": "exact"
@@ -43139,6 +44729,15 @@
      "n": 1564,
      "date": "2026-03-30",
      "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ACUSHNET HLDGS CORP"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "sale",
      "amount": "$15,001 - $50,000",
      "mid": 32500.5,
      "low": 15001,
@@ -44138,6 +45737,24 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "AST SPACEMOBILE INC CLASS A"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AST SPACEMOBILE INC CL A"
+    },
+    {
+     "date": "2026-04-07",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AST SPACEMOBILE INC CL A"
     }
    ],
    "resolution": "exact"
@@ -44200,6 +45817,24 @@
     {
      "n": 1712,
      "date": "2026-01-23",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ALNYLAM PHARMACEUTICALS INC"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ALNYLAM PHARMACEUTICALS INC"
+    },
+    {
+     "date": "2026-04-07",
      "type": "purchase",
      "amount": "$1,001 - $15,000",
      "mid": 8000.5,
@@ -44792,6 +46427,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "COLGATE PALMOLIVE CO"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "COLGATE-PALMOLIVE COM"
     }
    ],
    "resolution": "exact"
@@ -44840,6 +46484,33 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "ALLIANT ENERGY CORP"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ALLIANT ENERGY CORP"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ALLIANT ENERGY CORPORATION"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ALLIANT ENERGY CORPORATION"
     }
    ],
    "resolution": "exact"
@@ -45010,6 +46681,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "TYSON FOODS INC CLASS A"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
+     "rawDescription": "TYSON FOODS INC"
     }
    ],
    "resolution": "exact"
@@ -46482,6 +48162,24 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "AFLAC INC"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AFLAC INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AFLAC INC"
     }
    ],
    "resolution": "exact"
@@ -47014,6 +48712,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "ARCHER AVIATION INC CLASS A"
+    },
+    {
+     "date": "2026-04-28",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ARCHER AVIATION INC CLASS A"
     }
    ],
    "resolution": "exact"
@@ -47185,6 +48892,24 @@
      "n": 2390,
      "date": "2026-02-12",
      "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ASTERA LABS INC"
+    },
+    {
+     "date": "2026-04-07",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ASTERA LABS INC"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
      "amount": "$1,001 - $15,000",
      "mid": 8000.5,
      "low": 1001,
@@ -47390,6 +49115,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "MID-AMER APT CMNTYS INC REIT"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
+     "rawDescription": "MID-AMER APT CMNTYS INC"
     }
    ],
    "resolution": "exact"
@@ -47657,6 +49391,15 @@
      "n": 2316,
      "date": "2026-03-26",
      "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "APTARGROUP INC"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "sale",
      "amount": "$1,001 - $15,000",
      "mid": 8000.5,
      "low": 1001,
@@ -47934,6 +49677,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "HENRY JACK & ASSOC INC"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "HENRY JACK & ASSOC INC COM"
     }
    ],
    "resolution": "exact"
@@ -48850,6 +50602,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "UNITED AIRLINES HLDG"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "UNITED AIRLINES HOLDINGS, INC."
     }
    ],
    "resolution": "exact"
@@ -48889,6 +50650,24 @@
      "n": 3363,
      "date": "2026-03-17",
      "type": "sale",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "3M COMPANY"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "3M CO"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
      "amount": "$50,001 - $100,000",
      "mid": 75000.5,
      "low": 50001,
@@ -49014,6 +50793,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "ALBERTSONS CO SHS CL A CLASS A"
+    },
+    {
+     "date": "2026-04-20",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ALBERTSONS CO SHS CLA CLASS CLASS A"
     }
    ],
    "resolution": "exact"
@@ -49355,6 +51143,15 @@
      "mid": 32500.5,
      "low": 15001,
      "high": 50000,
+     "rawDescription": "AECOM"
+    },
+    {
+     "date": "2026-04-28",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
      "rawDescription": "AECOM"
     }
    ],
@@ -49852,6 +51649,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "BERKLEY W R CORP"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$250,001 - $500,000",
+     "mid": 375000.5,
+     "low": 250001,
+     "high": 500000,
+     "rawDescription": "BERKLEY WR CORP"
     }
    ],
    "resolution": "exact"
@@ -50779,6 +52585,352 @@
     }
    ],
    "resolution": "exact"
+  },
+  "_UNRESOLVED": {
+   "ticker": "_UNRESOLVED",
+   "name": "Nicht aufgelöst",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ALLY FINL INC PERP-D NT 7.1000% 12/31/49"
+    },
+    {
+     "date": "2026-04-15",
+     "type": "purchase",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
+     "rawDescription": "MARICOPA CNTY ARIZ INDL DEV 5.0000% 01/01/32"
+    },
+    {
+     "date": "2026-04-07",
+     "type": "sale",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
+     "rawDescription": "ALLEN TX INDPT SCH PERMA SRA BE/R/5 DUE 021527 DTD 120225 FC 021526 2.556%"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "ALLY FINL INC PERP-D NT 7.1000% 12/31/49"
+    },
+    {
+     "date": "2026-04-07",
+     "type": "sale",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
+     "rawDescription": "AUSTIN TX ELEC UTIL SYS RV BE/R/5 DUE 111534 DTD 120325 FC 051526 3.132%"
+    }
+   ]
+  },
+  "FI": {
+   "ticker": "FI",
+   "name": "FI",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$500,001 - $1,000,000",
+     "mid": 750000.5,
+     "low": 500001,
+     "high": 1000000,
+     "rawDescription": "FISERV INC"
+    }
+   ]
+  },
+  "TAP": {
+   "ticker": "TAP",
+   "name": "TAP",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "MOLSON COORS BEVERAGE COMPANY"
+    }
+   ]
+  },
+  "AES": {
+   "ticker": "AES",
+   "name": "AES",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AES CORP"
+    }
+   ]
+  },
+  "AFRM": {
+   "ticker": "AFRM",
+   "name": "AFRM",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-20",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "AFFIRM HLDGS INC CLASS A"
+    }
+   ]
+  },
+  "AL": {
+   "ticker": "AL",
+   "name": "AL",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "AIR LEASE CORP"
+    }
+   ]
+  },
+  "AIN": {
+   "ticker": "AIN",
+   "name": "AIN",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-13",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ALBANY INTL CORP NEW CLASS A"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ALBANY INTL CORP NEW CLASS A"
+    }
+   ]
+  },
+  "ALLE": {
+   "ticker": "ALLE",
+   "name": "ALLE",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "ALLEGION PUBLIC LIMITED COMPANY"
+    }
+   ]
+  },
+  "GOOG": {
+   "ticker": "GOOG",
+   "name": "GOOG",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ALPHABET INC"
+    },
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ALPHABET INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "Alphabet Inc Cap Stk Cl C"
+    },
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "Alphabet Inc Cl C"
+    }
+   ]
+  },
+  "AU": {
+   "ticker": "AU",
+   "name": "AU",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-28",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ANGLOGOLD ASHANTI PLC F"
+    }
+   ]
+  },
+  "ANIP": {
+   "ticker": "ANIP",
+   "name": "ANIP",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-13",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ANI PHARMACEUTICALS INC"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ANI PHARMACEUTICALS INC"
+    }
+   ]
+  },
+  "ARCH": {
+   "ticker": "ARCH",
+   "name": "ARCH",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ARCH CAPITAL GROUP LTD"
+    }
+   ]
+  },
+  "ADM": {
+   "ticker": "ADM",
+   "name": "ADM",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-10",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ARCHER-DANIELS-MIDLAND CO"
+    }
+   ]
+  },
+  "AGIC": {
+   "ticker": "AGIC",
+   "name": "AGIC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-30",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ASSURED GUARANTY LTD F"
+    }
+   ]
+  },
+  "ATO": {
+   "ticker": "ATO",
+   "name": "ATO",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "ATMOS ENERGY CORP"
+    }
+   ]
+  },
+  "ATMU": {
+   "ticker": "ATMU",
+   "name": "ATMU",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-13",
+     "type": "purchase",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "ATMUS FILTRATION TECHNOL"
+    },
+    {
+     "date": "2026-04-30",
+     "type": "sale",
+     "amount": "$100,001 - $250,000",
+     "mid": 175000.5,
+     "low": 100001,
+     "high": 250000,
+     "rawDescription": "ATMUS FILTRATION TECHNOL"
+    }
+   ]
   }
  },
  "sectors": {
