@@ -1,10 +1,10 @@
 {
- "generatedAt": "2026-07-08T10:10:12.083Z",
+ "generatedAt": "2026-07-08T15:39:51.240Z",
  "totals": {
   "txCount": 6153,
   "buyCount": 3499,
   "sellCount": 2654,
-  "uniqueTickers": 1213
+  "uniqueTickers": 1217
  },
  "stocks": {
   "VOO": {
@@ -8101,6 +8101,15 @@
      "low": 50001,
      "high": 100000,
      "rawDescription": "VERISIGN INC"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "VERSIGENT LTD"
     }
    ],
    "resolution": "exact"
@@ -43528,6 +43537,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "WESTERN DIGITAL CORP"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "sale",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "WSTN DIGITAL CORP"
     }
    ],
    "resolution": "exact"
@@ -64479,6 +64497,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "CHUBB LTD"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "CHUBB LTD CHF"
     }
    ],
    "resolution": "exact"
@@ -70475,15 +70502,6 @@
      "rawDescription": "AUSTIN TX ELEC UTIL SYS RV BE/R/5 DUE 111534 DTD 120325 FC 051526 3.132%"
     },
     {
-     "date": "2026-04-28",
-     "type": "sale",
-     "amount": "$1,001 - $15,000",
-     "mid": 8000.5,
-     "low": 1001,
-     "high": 15000,
-     "rawDescription": "BENTLEY SYS INC CLASS CLASS B"
-    },
-    {
      "date": "2026-04-07",
      "type": "sale",
      "amount": "$1,000,001 - $5,000,000",
@@ -70502,24 +70520,6 @@
      "rawDescription": "BROWARD CNTY FL 2.384% DUE 10/01/26"
     },
     {
-     "date": "2026-04-17",
-     "type": "purchase",
-     "amount": "$1,001 - $15,000",
-     "mid": 8000.5,
-     "low": 1001,
-     "high": 15000,
-     "rawDescription": "CENCORA INC CLASS SERIES A"
-    },
-    {
-     "date": "2026-04-27",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "CHUBB LTD CHF"
-    },
-    {
      "date": "2026-04-28",
      "type": "purchase",
      "amount": "$50,001 - $100,000",
@@ -70527,15 +70527,6 @@
      "low": 50001,
      "high": 100000,
      "rawDescription": "CPTL ONE FINL CORP NTS 06.377% 060834 DTD060823 FC120823 B/E YTM = 5.467"
-    },
-    {
-     "date": "2026-04-30",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "EVERFORTH INC"
     },
     {
      "date": "2026-04-07",
@@ -70608,15 +70599,6 @@
      "low": 500001,
      "high": 1000000,
      "rawDescription": "LEE CNTY FL SCH BRD SRA RV BE/R/5 DUE 080133 DTD 111425 FC 020126 3.096%"
-    },
-    {
-     "date": "2026-04-27",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "MARSH"
     },
     {
      "date": "2026-04-10",
@@ -70790,15 +70772,6 @@
      "rawDescription": "US TREASUR NT 4% DUE 07/31/30"
     },
     {
-     "date": "2026-04-27",
-     "type": "sale",
-     "amount": "$1,001 - $15,000",
-     "mid": 8000.5,
-     "low": 1001,
-     "high": 15000,
-     "rawDescription": "VERSIGENT LTD"
-    },
-    {
      "date": "2026-04-07",
      "type": "sale",
      "amount": "$500,001 - $1,000,000",
@@ -70826,15 +70799,6 @@
      "rawDescription": "WASHINGTON ST HEALT 5% DUE 10/01/35"
     },
     {
-     "date": "2026-04-27",
-     "type": "sale",
-     "amount": "$50,001 - $100,000",
-     "mid": 75000.5,
-     "low": 50001,
-     "high": 100000,
-     "rawDescription": "WSTN DIGITAL CORP"
-    },
-    {
      "date": "2026-05-08",
      "type": "purchase",
      "amount": "$250,001 - $500,000",
@@ -70851,15 +70815,6 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "HOWARD CNTY MD CONS PUB IMPT PJ SER A B/E OID @98.466 3.13% 3.00% Due Feb 15, 2032"
-    },
-    {
-     "date": "2026-05-15",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "ENVIRI CORP"
     },
     {
      "date": "2026-05-15",
@@ -71991,7 +71946,7 @@
   },
   "MAR": {
    "ticker": "MAR",
-   "name": "MAR",
+   "name": "MARSH",
    "sector": "",
    "transactions": [
     {
@@ -72011,6 +71966,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "MARRIOTT INTL INC NEW CL A"
+    },
+    {
+     "date": "2026-04-27",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "MARSH"
     }
    ]
   },
@@ -74689,6 +74653,70 @@
      "low": 100001,
      "high": 250000,
      "rawDescription": "TRI POINTE HOMES INC"
+    }
+   ]
+  },
+  "BSI": {
+   "ticker": "BSI",
+   "name": "BENTLEY SYS INC CLASS CLASS B",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-28",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "BENTLEY SYS INC CLASS CLASS B"
+    }
+   ]
+  },
+  "CEN": {
+   "ticker": "CEN",
+   "name": "CENCORA INC CLASS SERIES A",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-17",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "CENCORA INC CLASS SERIES A"
+    }
+   ]
+  },
+  "EVF": {
+   "ticker": "EVF",
+   "name": "EVERFORTH INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-04-30",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "EVERFORTH INC"
+    }
+   ]
+  },
+  "ENVI": {
+   "ticker": "ENVI",
+   "name": "ENVIRI CORP",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-05-15",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ENVIRI CORP"
     }
    ]
   }
