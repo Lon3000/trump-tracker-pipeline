@@ -252,6 +252,65 @@ function parseTextFallback(text) {
   return out;
 }
 
+/* --- Nachauflösung: _UNRESOLVED-Namen per Text-Gemini zuordnen ----------- */
+const LITE_MODEL = 'gemini-2.5-flash-lite'; // Text-only, eigenes Tageskontingent
+
+/**
+ * Ordnet Transaktionen im _UNRESOLVED-Sammelbecken nachträglich echten Tickern
+ * zu (z. B. "Bank Amer Corp" -> BAC). Anleihen/Munis bleiben bewusst ohne
+ * Ticker und werden nur ehrlicher beschriftet. Idempotent & billig (1–2
+ * Text-Calls, nur wenn es Unaufgelöste gibt). txId enthält den Ticker NICHT,
+ * daher erzeugt das Verschieben keine neuen "neu"-Pushes auf dem Webspace.
+ */
+async function enrichUnresolved(dataset) {
+  const bucket = dataset.stocks._UNRESOLVED;
+  if (!bucket || !bucket.transactions.length || !process.env.GEMINI_API_KEY) return 0;
+  const descs = [...new Set(bucket.transactions.map(t => t.rawDescription))];
+  const map = {};
+  for (let i = 0; i < descs.length; i += 120) {
+    const batch = descs.slice(i, i + 120);
+    const prompt = 'Ordne jeder Wertpapier-Beschreibung aus einem US-Broker-Auszug zu: '
+      + 'ticker (US-Börsenticker, NUR wenn börsennotierte Aktie/ETF/REIT, sonst leer), '
+      + 'name (sauberer Firmenname), kind (stock|etf|bond|fund|other). '
+      + 'Anleihen/Municipal Bonds/Notes => kind bond und ticker leer. Nichts erfinden.\n\n'
+      + batch.map((d, j) => `[${j}] ${d}`).join('\n');
+    const body = { contents: [{ parts: [{ text: prompt }] }],
+      generationConfig: { responseMimeType: 'application/json', maxOutputTokens: 65536, thinkingConfig: { thinkingBudget: 0 },
+        responseSchema: { type: 'OBJECT', properties: { results: { type: 'ARRAY', items: { type: 'OBJECT',
+          properties: { index: { type: 'INTEGER' }, ticker: { type: 'STRING' }, name: { type: 'STRING' }, kind: { type: 'STRING' } },
+          required: ['index', 'kind'] } } }, required: ['results'] } } };
+    try {
+      const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${LITE_MODEL}:generateContent?key=${process.env.GEMINI_API_KEY}`,
+        { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+      if (!r.ok) { console.log(`  Nachauflösung: HTTP ${r.status} — Rest bleibt bis zum nächsten Lauf.`); break; }
+      const j = await r.json();
+      const res = JSON.parse(j.candidates?.[0]?.content?.parts?.[0]?.text || '{"results":[]}').results || [];
+      for (const x of res) {
+        const d = batch[x.index];
+        if (!d) continue;
+        const tk = (x.ticker || '').toUpperCase().trim();
+        if ((x.kind === 'stock' || x.kind === 'etf') && /^[A-Z]{1,5}([.-][A-Z])?$/.test(tk)) {
+          map[d] = { ticker: tk, name: (x.name || d).trim() };
+        }
+      }
+    } catch (e) { console.log('  Nachauflösung fehlgeschlagen: ' + e.message.slice(0, 60)); break; }
+    if (i + 120 < descs.length) await sleep(4000);
+  }
+  let moved = 0;
+  bucket.transactions = bucket.transactions.filter(t => {
+    const m = map[t.rawDescription];
+    if (!m) return true;
+    const st = dataset.stocks[m.ticker] = dataset.stocks[m.ticker] || { ticker: m.ticker, name: m.name, sector: '', transactions: [] };
+    if (!st.name || st.name === st.ticker) st.name = m.name;
+    st.transactions.push(t);
+    moved++;
+    return false;
+  });
+  bucket.name = 'Anleihen & Sonstige (ohne Ticker)';
+  if (!bucket.transactions.length) delete dataset.stocks._UNRESOLVED;
+  return moved;
+}
+
 /* --- Ticker-Resolver (für Fallback / leere Gemini-Ticker) --------------- */
 function buildResolver(tickers) {
   const fw = {};
@@ -334,7 +393,14 @@ for (const f of fresh) {
   }
 }
 
-if (added > 0) {
+// Unaufgelöste Namen nachträglich echten Tickern zuordnen (billiger Text-Call)
+let movedTk = 0;
+if (useGemini) {
+  movedTk = await enrichUnresolved(dataset);
+  if (movedTk) console.log(`Nachauflösung: ${movedTk} Transaktionen konkreten Tickern zugeordnet.`);
+}
+
+if (added > 0 || movedTk > 0) {
   let buy=0, sell=0, n=0;
   for (const st of Object.values(dataset.stocks)) for (const t of st.transactions) { n++; if(t.type==='purchase')buy++; else if(t.type==='sale')sell++; }
   dataset.totals = { txCount:n, buyCount:buy, sellCount:sell, uniqueTickers:Object.keys(dataset.stocks).length };
