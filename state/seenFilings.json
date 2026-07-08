@@ -50,5 +50,17 @@
  "https://www.whitehouse.gov/wp-content/uploads/2025/09/President-Donald-J.-Trump-Periodic-Transaction-Report-9.3.25-4.pdf": {
   "title": "President Donald J. Trump Periodic Transaction Report 9.3.25 (4)",
   "url": "https://www.whitehouse.gov/wp-content/uploads/2025/09/President-Donald-J.-Trump-Periodic-Transaction-Report-9.3.25-4.pdf"
+ },
+ "https://www.whitehouse.gov/wp-content/uploads/2026/06/President-Donald-J.-Trump-Periodic-Transaction-Report-0.6.25.26-1.pdf": {
+  "title": "President Donald J. Trump Periodic Transaction Report 0.6.25.26 (1)",
+  "url": "https://www.whitehouse.gov/wp-content/uploads/2026/06/President-Donald-J.-Trump-Periodic-Transaction-Report-0.6.25.26-1.pdf",
+  "count": 615,
+  "processedAt": "2026-07-08T09:45:29.544Z"
+ },
+ "https://www.whitehouse.gov/wp-content/uploads/2026/06/President-Donald-J.-Trump-Periodic-Transaction-Report-0.6.25.26-2.pdf": {
+  "title": "President Donald J. Trump Periodic Transaction Report 0.6.25.26 (2)",
+  "url": "https://www.whitehouse.gov/wp-content/uploads/2026/06/President-Donald-J.-Trump-Periodic-Transaction-Report-0.6.25.26-2.pdf",
+  "count": 1143,
+  "processedAt": "2026-07-08T09:51:20.101Z"
  }
 }
