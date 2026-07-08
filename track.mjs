@@ -280,9 +280,15 @@ async function enrichUnresolved(dataset) {
           properties: { index: { type: 'INTEGER' }, ticker: { type: 'STRING' }, name: { type: 'STRING' }, kind: { type: 'STRING' } },
           required: ['index', 'kind'] } } }, required: ['results'] } } };
     try {
-      const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${LITE_MODEL}:generateContent?key=${process.env.GEMINI_API_KEY}`,
-        { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
-      if (!r.ok) { console.log(`  Nachauflösung: HTTP ${r.status} — Rest bleibt bis zum nächsten Lauf.`); break; }
+      let r = null;
+      for (let a = 0; a < 4; a++) { // flash-lite hat oft kurze 503-Spitzen
+        r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${LITE_MODEL}:generateContent?key=${process.env.GEMINI_API_KEY}`,
+          { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+        if (r.status !== 503 && r.status !== 429) break;
+        console.log(`  Nachauflösung: HTTP ${r.status} — warte 25s (Versuch ${a + 1}/4)…`);
+        await sleep(25000);
+      }
+      if (!r || !r.ok) { console.log(`  Nachauflösung: HTTP ${r ? r.status : '?'} — Rest bleibt bis zum nächsten Lauf.`); break; }
       const j = await r.json();
       const res = JSON.parse(j.candidates?.[0]?.content?.parts?.[0]?.text || '{"results":[]}').results || [];
       for (const x of res) {
