@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-24T19:55:29.163Z",
+ "generatedAt": "2026-08-25T19:50:38.398Z",
  "totals": {
   "txCount": 7204,
   "buyCount": 4075,
@@ -66490,6 +66490,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "CRH PUBLIC LIMITED CO F"
+    },
+    {
+     "date": "2026-06-18",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "Crh Plc"
     }
    ],
    "resolution": "exact"
@@ -78800,24 +78809,6 @@
      "rawDescription": "QUALM INC"
     },
     {
-     "date": "2026-06-18",
-     "type": "purchase",
-     "amount": "$1,001 - $15,000",
-     "mid": 8000.5,
-     "low": 1001,
-     "high": 15000,
-     "rawDescription": "Crh Plc"
-    },
-    {
-     "date": "2026-06-18",
-     "type": "sale",
-     "amount": "$50,001 - $100,000",
-     "mid": 75000.5,
-     "low": 50001,
-     "high": 100000,
-     "rawDescription": "MOLSON COORS BEVERAGE PANY"
-    },
-    {
      "date": "2026-06-01",
      "type": "sale",
      "amount": "$250,001 - $500,000",
@@ -79710,7 +79701,7 @@
   },
   "TAP": {
    "ticker": "TAP",
-   "name": "TAP",
+   "name": "MOLSON COORS BEVERAGE PANY",
    "sector": "",
    "transactions": [
     {
@@ -79721,6 +79712,15 @@
      "low": 50001,
      "high": 100000,
      "rawDescription": "MOLSON COORS BEVERAGE COMPANY"
+    },
+    {
+     "date": "2026-06-18",
+     "type": "sale",
+     "amount": "$50,001 - $100,000",
+     "mid": 75000.5,
+     "low": 50001,
+     "high": 100000,
+     "rawDescription": "MOLSON COORS BEVERAGE PANY"
     }
    ]
   },
