@@ -1,10 +1,10 @@
 {
- "generatedAt": "2026-09-25T18:18:27.664Z",
+ "generatedAt": "2026-09-25T22:33:36.504Z",
  "totals": {
   "txCount": 8358,
   "buyCount": 4750,
   "sellCount": 3608,
-  "uniqueTickers": 1365
+  "uniqueTickers": 1395
  },
  "stocks": {
   "VOO": {
@@ -87737,87 +87737,6 @@
      "rawDescription": "CYPRESS FAIRBANKS TX INDPT SCH DIST BLDG PSF GTD SER A B/E 5.00% Due Feb 15, 2027"
     },
     {
-     "date": "2026-07-06",
-     "type": "sale",
-     "amount": "$1,001 - $15,000",
-     "mid": 8000.5,
-     "low": 1001,
-     "high": 15000,
-     "rawDescription": "Mobility Global Inc"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "sale",
-     "amount": "$1,001 - $15,000",
-     "mid": 8000.5,
-     "low": 1001,
-     "high": 15000,
-     "rawDescription": "INSTEL HLDGS INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "FIRST ADVANTAGE CORP NEW"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "ALIGNMENT HEALTHCARE INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "DIGI INTL INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "QUAKER HOUGHTON"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "FRONTDOOR INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "SONOS INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "SONIC AUTOMOTIVE INC CLASS A"
-    },
-    {
      "date": "2026-07-29",
      "type": "sale",
      "amount": "$15,001 - $50,000",
@@ -87828,309 +87747,12 @@
     },
     {
      "date": "2026-07-29",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "OMNICELL INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "CTS CORP"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "WESBANCO INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "GREENBRIER COS INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "FORTREA HLDGS INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "CALIX INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "F&G ANNUITIES & LIFE INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "UNITED NAT FOODS INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "UNIVERSAL TECHNICAL INST"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "BRADY CORP CLASS A"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "SUPERNUS PHARMACEUTICALS"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "RUSH STREET INTERACT A CLASS A"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "CALIFORNIA RES CORP"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "ADAPT HEALTH CORP"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "ACADEMY SPORTS & OUTDOOR"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "BANKUNITED INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "INSTALLED BLDG PRODS INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "OCEANEERING INTL INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "LIBERTY ENERGY INC A CLASS A"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "CENTRUS ENERGY CORP CLASS A"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "AMERICAN EAGLE OUTFITTER"
-    },
-    {
-     "date": "2026-07-29",
      "type": "purchase",
      "amount": "$15,001 - $50,000",
      "mid": 32500.5,
      "low": 15001,
      "high": 50000,
      "rawDescription": "SAUL CTRS INC REIT"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "REMITLY GLOBAL INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "GENWORTH FINL INC CLASS A"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "ELEMENT SOLUTIONS IN"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "WARBY PARKER INC CLASS A"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "TELEPHONE & DATA SYS INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "KARMAN HLDGS INC"
-    },
-    {
-     "date": "2026-07-08",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "BUCKLE INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "VERACYTE INC"
-    },
-    {
-     "date": "2026-07-29",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "SOLARIS ENERGY INFRSTR CLASS A"
-    },
-    {
-     "date": "2026-07-08",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "VERSIGENT LTD F"
-    },
-    {
-     "date": "2026-07-08",
-     "type": "sale",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "TELEPHONE & DATA SYS INC"
-    },
-    {
-     "date": "2026-07-27",
-     "type": "purchase",
-     "amount": "$1,001 - $15,000",
-     "mid": 8000.5,
-     "low": 1001,
-     "high": 15000,
-     "rawDescription": "MOBILITY GLOBAL INC"
     },
     {
      "date": "2026-07-10",
@@ -88158,15 +87780,6 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "COOK CNTY IL SALES TAX RV BE/R/5 DUE 111529 DTD 082526 FC 111526 2.960%"
-    },
-    {
-     "date": "2026-07-08",
-     "type": "sale",
-     "amount": "$1,001 - $15,000",
-     "mid": 8000.5,
-     "low": 1001,
-     "high": 15000,
-     "rawDescription": "MOBILITY GLOBAL INC"
     }
    ]
   },
@@ -90694,6 +90307,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "REMITLY GLOBAL INC"
+    },
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "REMITLY GLOBAL INC"
     }
    ]
   },
@@ -90815,11 +90437,20 @@
   },
   "SUPN": {
    "ticker": "SUPN",
-   "name": "SUPN",
+   "name": "SUPERNUS PHARMACEUTICALS",
    "sector": "",
    "transactions": [
     {
      "date": "2026-05-15",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "SUPERNUS PHARMACEUTICALS"
+    },
+    {
+     "date": "2026-07-29",
      "type": "sale",
      "amount": "$15,001 - $50,000",
      "mid": 32500.5,
@@ -90831,7 +90462,7 @@
   },
   "TDS": {
    "ticker": "TDS",
-   "name": "TDS",
+   "name": "TELEPHONE & DATA SYS INC",
    "sector": "",
    "transactions": [
     {
@@ -90841,6 +90472,24 @@
      "mid": 8000.5,
      "low": 1001,
      "high": 15000,
+     "rawDescription": "TELEPHONE & DATA SYS INC"
+    },
+    {
+     "date": "2026-07-29",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "TELEPHONE & DATA SYS INC"
+    },
+    {
+     "date": "2026-07-08",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
      "rawDescription": "TELEPHONE & DATA SYS INC"
     }
    ]
@@ -91154,7 +90803,7 @@
   },
   "ELS": {
    "ticker": "ELS",
-   "name": "ELS",
+   "name": "ELEMENT SOLUTIONS IN",
    "sector": "",
    "transactions": [
     {
@@ -91165,6 +90814,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "EQUITY LIFESTYLE PPTYS I REIT"
+    },
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ELEMENT SOLUTIONS IN"
     }
    ]
   },
@@ -91829,6 +91487,15 @@
     {
      "date": "2026-05-15",
      "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "BRADY CORP CLASS A"
+    },
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
      "amount": "$15,001 - $50,000",
      "mid": 32500.5,
      "low": 15001,
@@ -93471,6 +93138,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "F&G ANNUITIES & LIFE INC"
+    },
+    {
+     "date": "2026-07-29",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "F&G ANNUITIES & LIFE INC"
     }
    ]
   },
@@ -93519,6 +93195,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "RUSH STREET INTERACT A CLASS A"
+    },
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "RUSH STREET INTERACT A CLASS A"
     }
    ]
   },
@@ -93545,6 +93230,15 @@
    "transactions": [
     {
      "date": "2026-06-04",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ALIGNMENT HEALTHCARE INC"
+    },
+    {
+     "date": "2026-07-29",
      "type": "purchase",
      "amount": "$15,001 - $50,000",
      "mid": 32500.5,
@@ -93632,6 +93326,15 @@
      "mid": 8000.5,
      "low": 1001,
      "high": 15000,
+     "rawDescription": "CALIX INC"
+    },
+    {
+     "date": "2026-07-29",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
      "rawDescription": "CALIX INC"
     }
    ]
@@ -94767,7 +94470,7 @@
   },
   "UNFI": {
    "ticker": "UNFI",
-   "name": "UNFI",
+   "name": "UNITED NAT FOODS INC",
    "sector": "",
    "transactions": [
     {
@@ -94778,6 +94481,15 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "UNTI GROUP INC NEW"
+    },
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "UNITED NAT FOODS INC"
     }
    ]
   },
@@ -94895,7 +94607,7 @@
   },
   "ACAD": {
    "ticker": "ACAD",
-   "name": "ACAD",
+   "name": "ACADEMY SPORTS & OUTDOOR",
    "sector": "",
    "transactions": [
     {
@@ -94906,6 +94618,15 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "ACADIA PHARMACEUTICALS I"
+    },
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ACADEMY SPORTS & OUTDOOR"
     }
    ]
   },
@@ -95598,6 +95319,495 @@
      "low": 15001,
      "high": 50000,
      "rawDescription": "ALLY FINL INC PERP-D NT 7.1000%"
+    }
+   ]
+  },
+  "MGAMF": {
+   "ticker": "MGAMF",
+   "name": "Mobility Global Inc",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-06",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "Mobility Global Inc"
+    }
+   ]
+  },
+  "INSTL": {
+   "ticker": "INSTL",
+   "name": "INSTEL HLDGS INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "INSTEL HLDGS INC"
+    }
+   ]
+  },
+  "FFNT": {
+   "ticker": "FFNT",
+   "name": "FIRST ADVANTAGE CORP NEW",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "FIRST ADVANTAGE CORP NEW"
+    }
+   ]
+  },
+  "DIGI": {
+   "ticker": "DIGI",
+   "name": "DIGI INTL INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "DIGI INTL INC"
+    }
+   ]
+  },
+  "PQG": {
+   "ticker": "PQG",
+   "name": "QUAKER HOUGHTON",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "QUAKER HOUGHTON"
+    }
+   ]
+  },
+  "FDOR": {
+   "ticker": "FDOR",
+   "name": "FRONTDOOR INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "FRONTDOOR INC"
+    }
+   ]
+  },
+  "SONO": {
+   "ticker": "SONO",
+   "name": "SONOS INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "SONOS INC"
+    }
+   ]
+  },
+  "SONC": {
+   "ticker": "SONC",
+   "name": "SONIC AUTOMOTIVE INC CLASS A",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "SONIC AUTOMOTIVE INC CLASS A"
+    }
+   ]
+  },
+  "OMNL": {
+   "ticker": "OMNL",
+   "name": "OMNICELL INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "OMNICELL INC"
+    }
+   ]
+  },
+  "CTS": {
+   "ticker": "CTS",
+   "name": "CTS CORP",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "CTS CORP"
+    }
+   ]
+  },
+  "WESB": {
+   "ticker": "WESB",
+   "name": "WESBANCO INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "WESBANCO INC"
+    }
+   ]
+  },
+  "GBR": {
+   "ticker": "GBR",
+   "name": "GREENBRIER COS INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "GREENBRIER COS INC"
+    }
+   ]
+  },
+  "FTRE": {
+   "ticker": "FTRE",
+   "name": "FORTREA HLDGS INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "FORTREA HLDGS INC"
+    }
+   ]
+  },
+  "UTII": {
+   "ticker": "UTII",
+   "name": "UNIVERSAL TECHNICAL INST",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "UNIVERSAL TECHNICAL INST"
+    }
+   ]
+  },
+  "RCOR": {
+   "ticker": "RCOR",
+   "name": "CALIFORNIA RES CORP",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "CALIFORNIA RES CORP"
+    }
+   ]
+  },
+  "ADTH": {
+   "ticker": "ADTH",
+   "name": "ADAPT HEALTH CORP",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "ADAPT HEALTH CORP"
+    }
+   ]
+  },
+  "UBNK": {
+   "ticker": "UBNK",
+   "name": "BANKUNITED INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "BANKUNITED INC"
+    }
+   ]
+  },
+  "IBP": {
+   "ticker": "IBP",
+   "name": "INSTALLED BLDG PRODS INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "INSTALLED BLDG PRODS INC"
+    }
+   ]
+  },
+  "OII": {
+   "ticker": "OII",
+   "name": "OCEANEERING INTL INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "OCEANEERING INTL INC"
+    }
+   ]
+  },
+  "LCRY": {
+   "ticker": "LCRY",
+   "name": "LIBERTY ENERGY INC A CLASS A",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "LIBERTY ENERGY INC A CLASS A"
+    }
+   ]
+  },
+  "CCUR": {
+   "ticker": "CCUR",
+   "name": "CENTRUS ENERGY CORP CLASS A",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "CENTRUS ENERGY CORP CLASS A"
+    }
+   ]
+  },
+  "AEOS": {
+   "ticker": "AEOS",
+   "name": "AMERICAN EAGLE OUTFITTER",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "AMERICAN EAGLE OUTFITTER"
+    }
+   ]
+  },
+  "GNW": {
+   "ticker": "GNW",
+   "name": "GENWORTH FINL INC CLASS A",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "GENWORTH FINL INC CLASS A"
+    }
+   ]
+  },
+  "Y": {
+   "ticker": "Y",
+   "name": "WARBY PARKER INC CLASS A",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "WARBY PARKER INC CLASS A"
+    }
+   ]
+  },
+  "KSMN": {
+   "ticker": "KSMN",
+   "name": "KARMAN HLDGS INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "KARMAN HLDGS INC"
+    }
+   ]
+  },
+  "BUCK": {
+   "ticker": "BUCK",
+   "name": "BUCKLE INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-08",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "BUCKLE INC"
+    }
+   ]
+  },
+  "VERY": {
+   "ticker": "VERY",
+   "name": "VERACYTE INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "VERACYTE INC"
+    }
+   ]
+  },
+  "SOL": {
+   "ticker": "SOL",
+   "name": "SOLARIS ENERGY INFRSTR CLASS A",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "SOLARIS ENERGY INFRSTR CLASS A"
+    }
+   ]
+  },
+  "VERG": {
+   "ticker": "VERG",
+   "name": "VERSIGENT LTD F",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-08",
+     "type": "sale",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "VERSIGENT LTD F"
+    }
+   ]
+  },
+  "MGAM": {
+   "ticker": "MGAM",
+   "name": "MOBILITY GLOBAL INC",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-27",
+     "type": "purchase",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "MOBILITY GLOBAL INC"
+    },
+    {
+     "date": "2026-07-08",
+     "type": "sale",
+     "amount": "$1,001 - $15,000",
+     "mid": 8000.5,
+     "low": 1001,
+     "high": 15000,
+     "rawDescription": "MOBILITY GLOBAL INC"
     }
    ]
   }
