@@ -1,10 +1,10 @@
 {
- "generatedAt": "2026-09-25T22:33:36.504Z",
+ "generatedAt": "2026-10-14T12:56:59.300Z",
  "totals": {
   "txCount": 8358,
   "buyCount": 4750,
   "sellCount": 3608,
-  "uniqueTickers": 1395
+  "uniqueTickers": 1396
  },
  "stocks": {
   "VOO": {
@@ -87746,15 +87746,6 @@
      "rawDescription": "APOLLO COML REAL ESTATE REIT"
     },
     {
-     "date": "2026-07-29",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "SAUL CTRS INC REIT"
-    },
-    {
      "date": "2026-07-10",
      "type": "purchase",
      "amount": "$250,001 - $500,000",
@@ -95808,6 +95799,22 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "MOBILITY GLOBAL INC"
+    }
+   ]
+  },
+  "SAUL": {
+   "ticker": "SAUL",
+   "name": "SAUL CTRS INC REIT",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-07-29",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "SAUL CTRS INC REIT"
     }
    ]
   }
