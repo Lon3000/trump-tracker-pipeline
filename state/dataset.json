@@ -1,10 +1,10 @@
 {
- "generatedAt": "2026-11-07T07:24:05.441Z",
+ "generatedAt": "2026-11-16T22:57:06.360Z",
  "totals": {
   "txCount": 8871,
   "buyCount": 5036,
   "sellCount": 3835,
-  "uniqueTickers": 1418
+  "uniqueTickers": 1419
  },
  "stocks": {
   "VOO": {
@@ -90023,15 +90023,6 @@
      "rawDescription": "NEW YORK NY CITY 5.5% DUE 11/01/54"
     },
     {
-     "date": "2026-06-23",
-     "type": "purchase",
-     "amount": "$15,001 - $50,000",
-     "mid": 32500.5,
-     "low": 15001,
-     "high": 50000,
-     "rawDescription": "Space Expl Technologies Corp"
-    },
-    {
      "date": "2026-06-24",
      "type": "purchase",
      "amount": "$50,001 - $100,000",
@@ -100586,6 +100577,22 @@
      "low": 1001,
      "high": 15000,
      "rawDescription": "MP MATLS CORP"
+    }
+   ]
+  },
+  "SPCE": {
+   "ticker": "SPCE",
+   "name": "Space Expl Technologies Corp",
+   "sector": "",
+   "transactions": [
+    {
+     "date": "2026-06-23",
+     "type": "purchase",
+     "amount": "$15,001 - $50,000",
+     "mid": 32500.5,
+     "low": 15001,
+     "high": 50000,
+     "rawDescription": "Space Expl Technologies Corp"
     }
    ]
   }
